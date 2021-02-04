@@ -1,142 +1,142 @@
 [
   {
-    "head": "marten",
-    "body": "possum-asp",
-    "arms": 6,
-    "legs": 3,
-    "tail": 14
-  },
-  {
-    "head": "drake",
-    "body": "wren-possum",
+    "head": "raptor",
+    "body": "bat-troll",
     "arms": 1,
-    "legs": 11,
-    "tail": 11
-  },
-  {
-    "head": "tahr",
-    "body": "gnu-snake",
-    "arms": 1,
-    "legs": 8,
-    "tail": 6
-  },
-  {
-    "head": "hen",
-    "body": "imp-hippo",
-    "arms": 4,
-    "legs": 11,
-    "tail": 0
-  },
-  {
-    "head": "dory",
-    "body": "sole-slug",
-    "arms": 5,
-    "legs": 3,
-    "tail": 14
-  },
-  {
-    "head": "guinea",
-    "body": "mantis-glider",
-    "arms": 6,
-    "legs": 3,
-    "tail": 11
-  },
-  {
-    "head": "vervet",
-    "body": "chimp-marmot",
-    "arms": 4,
-    "legs": 11,
-    "tail": 3
-  },
-  {
-    "head": "cow",
-    "body": "parrot-moth",
-    "arms": 2,
-    "legs": 8,
-    "tail": 12
-  },
-  {
-    "head": "cougar",
-    "body": "cod-wren",
-    "arms": 5,
     "legs": 7,
-    "tail": 9
-  },
-  {
-    "head": "stud",
-    "body": "lynx-tiger",
-    "arms": 1,
-    "legs": 6,
     "tail": 8
   },
   {
-    "head": "ferret",
-    "body": "alien-baboon",
-    "arms": 6,
-    "legs": 7,
+    "head": "crab",
+    "body": "ibex-wasp",
+    "arms": 1,
+    "legs": 9,
+    "tail": 10
+  },
+  {
+    "head": "ox",
+    "body": "vervet-lamb",
+    "arms": 1,
+    "legs": 11,
+    "tail": 12
+  },
+  {
+    "head": "beetle",
+    "body": "crow-glider",
+    "arms": 2,
+    "legs": 4,
+    "tail": 6
+  },
+  {
+    "head": "slug",
+    "body": "dragon-turkey",
+    "arms": 5,
+    "legs": 9,
+    "tail": 14
+  },
+  {
+    "head": "poodle",
+    "body": "doe-llama",
+    "arms": 1,
+    "legs": 9,
     "tail": 10
   },
   {
     "head": "squid",
-    "body": "squid-lizard",
-    "arms": 4,
-    "legs": 9,
-    "tail": 5
-  },
-  {
-    "head": "tuna",
-    "body": "frog-tuna",
-    "arms": 4,
-    "legs": 3,
-    "tail": 10
-  },
-  {
-    "head": "mite",
-    "body": "hermit-crow",
-    "arms": 5,
-    "legs": 6,
-    "tail": 9
-  },
-  {
-    "head": "man",
-    "body": "filly-bat",
-    "arms": 2,
-    "legs": 3,
-    "tail": 11
-  },
-  {
-    "head": "swan",
-    "body": "walrus-wombat",
-    "arms": 6,
-    "legs": 5,
-    "tail": 7
+    "body": "troll-bedbug",
+    "arms": 1,
+    "legs": 2,
+    "tail": 3
   },
   {
     "head": "feline",
-    "body": "kit-amoeba",
-    "arms": 1,
-    "legs": 12,
-    "tail": 6
-  },
-  {
-    "head": "husky",
-    "body": "owl-hornet",
+    "body": "yeti-louse",
     "arms": 6,
-    "legs": 4,
-    "tail": 13
-  },
-  {
-    "head": "perch",
-    "body": "bobcat-adder",
-    "arms": 1,
-    "legs": 3,
-    "tail": 8
-  },
-  {
-    "head": "duck",
-    "body": "chimp-bengal",
-    "arms": 5,
     "legs": 5,
-    "tail": 4
+    "tail": 11
+  },
+  {
+    "head": "bear",
+    "body": "squid-ocelot",
+    "arms": 6,
+    "legs": 6,
+    "tail": 12
+  },
+  {
+    "head": "falcon",
+    "body": "jennet-calf",
+    "arms": 4,
+    "legs": 12,
+    "tail": 16
+  },
+  {
+    "head": "cattle",
+    "body": "minnow-worm",
+    "arms": 3,
+    "legs": 9,
+    "tail": 12
+  },
+  {
+    "head": "man",
+    "body": "cod-falcon",
+    "arms": 3,
+    "legs": 2,
+    "tail": 5
+  },
+  {
+    "head": "mole",
+    "body": "husky-cow",
+    "arms": 4,
+    "legs": 8,
+    "tail": 12
+  },
+  {
+    "head": "frog",
+    "body": "burro-kitten",
+    "arms": 3,
+    "legs": 9,
+    "tail": 12
+  },
+  {
+    "head": "jennet",
+    "body": "bear-tetra",
+    "arms": 1,
+    "legs": 9,
+    "tail": 10
+  },
+  {
+    "head": "collie",
+    "body": "moray-falcon",
+    "arms": 6,
+    "legs": 8,
+    "tail": 14
+  },
+  {
+    "head": "donkey",
+    "body": "hermit-mantis",
+    "arms": 4,
+    "legs": 5,
+    "tail": 9
+  },
+  {
+    "head": "cobra",
+    "body": "dragon-aphid",
+    "arms": 6,
+    "legs": 10,
+    "tail": 16
+  },
+  {
+    "head": "dane",
+    "body": "pika-serval",
+    "arms": 6,
+    "legs": 10,
+    "tail": 16
+  },
+  {
+    "head": "collie",
+    "body": "pony-tuna",
+    "arms": 5,
+    "legs": 9,
+    "tail": 14
   }
 ]

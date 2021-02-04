@@ -16,7 +16,7 @@ while iterator < 20:
     animals[iterator]['body'] = body
     animals[iterator]['arms'] = petname.random.randint(1,6)
     animals[iterator]['legs'] = petname.random.randint(2,12)
-    animals[iterator]['tail'] = petname.random.randint(0,14)
+    animals[iterator]['tail'] = animals[iterator]['arms']+animals[iterator]['legs']
     iterator = iterator +1
 
 #Stores the animal list in the json file
