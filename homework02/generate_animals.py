@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
 import petname
 import json
+import sys
 
 #Declares a list of dicionaries
 #Each dictionary describes a single animal
@@ -20,5 +22,5 @@ while iterator < 20:
     iterator = iterator +1
 
 #Stores the animal list in the json file
-with open('animals.json', 'w') as out:
-    json.dump(animals,out,indent = 2)
+with open(sys.argv[1], 'w') as f:         
+    json.dump(animals, f, indent=2)  
