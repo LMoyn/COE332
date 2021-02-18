@@ -42,7 +42,7 @@ def breedAnimals(firstParentIndex, secondParentIndex, animals):
 def main():
     #Opens the json file
     with open(sys.argv[1], 'r') as f:       
-    animals = json.load(f)  
+    	animals = json.load(f)  
 
     #Selects a random index telling us which of the animals in the json file will be printed
     parent1Index = petname.random.randint(0,20-1)
