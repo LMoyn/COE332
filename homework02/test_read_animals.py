@@ -8,8 +8,8 @@ class Test_read_animals(unittest.TestCase):
 
     def test_breedAnimals(self):
         #Opens the json file
-        with open('animals.json', 'r') as f:
-            animals = json.load(f)
+        with open(sys.argv[1], 'r') as f:
+        	animals = json.load(f)
 
         #The codes tests over parent pairs with the (x,y) pairs below as their indices
         xlist = [1,3,7,10,19]
@@ -54,4 +54,5 @@ class Test_read_animals(unittest.TestCase):
             iterator = iterator + 1
 
 if __name__ == '__main__':
-    unittest.main()
+	with open(sys.argv[1], 'r') as f:                                                                                                                                    animals = json.load(f)   
+	unittest.main()

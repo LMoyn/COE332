@@ -1,29 +1,26 @@
 #!/usr/bin/env python3
-import petname
 import json
+import petname
+import random
 import sys
 
-#Declares a list of dicionaries
-#Each dictionary describes a single animal
-animals = [dict() for x in range(20)]
+def main():
 
-#Gives head choices
-heads = ['snake', 'bull', 'lion', 'raven', 'bunny']
+    animal_dict = {}
+    animal_dict['animals'] = []
 
-#Loops over the 20 animals we generate
-iterator = 0
-while iterator < 20:
-    animals[iterator]['head'] = petname.random.choice(heads)
-    #Generates two animal names and concatenates them to make the body
-    body1 = petname.name()
-    body2 = petname.name()
-    body = body1 + "-"+body2
-    animals[iterator]['body'] = body
-    animals[iterator]['arms'] = 2*petname.random.randint(1,5)
-    animals[iterator]['legs'] = 3*petname.random.randint(1,4)
-    animals[iterator]['tail'] = animals[iterator]['arms']+animals[iterator]['legs']
-    iterator = iterator +1
+    for i in range(20):
+        this_animal = {}
+        this_animal['head'] = random.choice(['snake', 'bull', 'lion', 'raven', 'bunny'])
+        this_animal['body'] = petname.name() + '-' + petname.name()
+        this_animal['arms'] = random.randint(1,5) * 2
+        this_animal['legs'] = random.randint(1,4) * 3
+        this_animal['tail'] = this_animal['legs'] + this_animal['arms']
 
-#Stores the animal list in the json file
-with open(sys.argv[1], 'w') as f:         
-    json.dump(animals, f, indent=2)  
+        animal_dict['animals'].append(this_animal)
+
+    with open(sys.argv[1], 'w') as f:
+        json.dump(animal_dict, f, indent=2)
+
+if __name__ == '__main__':
+    main()

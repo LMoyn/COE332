@@ -1,23 +1,9 @@
 #!/usr/bin/env python3
 import json
-import petname
+import random
 import sys
 
-#Prints information for the animal at the provided index
-def printAnimal(animalIndex,animals):
-    #Prints the animal data for this index
-    animal = animals[animalIndex]
-    print(animal)
-    #Prints the animal data in a readable form
-    #Concatenation of text and data
-    print("head: "+animal['head'])
-    print("body: "+animal['body'])
-    #String conversion of integer data
-    print("arms: "+str(animal['arms']))
-    print("legs: "+str(animal['legs']))
-    print("tail: "+str(animal['tail']))
-
-#Prints an animal resulting from the mixing of two input animals' traits
+#Gives an animal resulting from the mixing of two input animals' traits
 def breedAnimals(firstParentIndex, secondParentIndex, animals):
     offspring = dict()
     #Randomly selects to have one of the parents' body's and head
@@ -37,32 +23,13 @@ def breedAnimals(firstParentIndex, secondParentIndex, animals):
     offspring['legs'] = round((animals[firstParentIndex]['legs'] + animals[secondParentIndex]['legs'] )/2)
     offspring['tail'] = offspring['arms'] + offspring['legs']
     return offspring
-    
 
 def main():
-    #Opens the json file
-    with open(sys.argv[1], 'r') as f:       
-    	animals = json.load(f)  
 
-    #Selects a random index telling us which of the animals in the json file will be printed
-    parent1Index = petname.random.randint(0,20-1)
-    parent2Index = petname.random.randint(0,20-1)
-    while(parent1Index == parent2Index):
-        parent2Index = petname.random.randint(0,20-1)
-    print("First Parent:")
-    printAnimal(parent1Index,animals)
-    print("Second Parent:")
-    printAnimal(parent2Index,animals)
-    print("Offspring:")
-    offspring = breedAnimals(parent1Index,parent2Index,animals)
-    #Prints the offspring data in a readable form
-    #Concatenation of text and data
-    print("head: "+offspring['head'])
-    print("body: "+offspring['body'])
-    #String conversion of integer data
-    print("arms: "+str(offspring['arms']))
-    print("legs: "+str(offspring['legs']))
-    print("tail: "+str(offspring['tail']))
+    with open(sys.argv[1], 'r') as f:
+        animals = json.load(f)
+
+    print(random.choice(animals['animals']))
 
 if __name__ == '__main__':
     main()
