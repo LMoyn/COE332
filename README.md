@@ -18,16 +18,25 @@ The repository may be downloaded by using
 in the terminal
 
 
+To run the scripts, first navigate to the appropriate subfolder. The homework01 scripts can be run by using 
+
+
+The homework02 read_animals.py and generate_animals.py must be provided with the name of the JSON file to read/write to. To generate animals and store them in a file called "animals.json", we would use
+
+
+
 
 # Instructions on how to build an image with the Dockerfile provided
 
-
+The code may be containerized by using
 
 
 # Instructions on how to run the scripts inside a container
+
+Once we have containerized the scripts, we can run them by using
 
 
 
 # Instructions on how to run the unit test(s)
 
-
+test_read_animals.py is run in the same manner as the homework01 scripts. In the terminal in the homework02 folder we write
