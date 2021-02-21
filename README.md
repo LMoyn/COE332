@@ -38,8 +38,7 @@ The code in the homework02 folder may be containerized by using
 
 in the terminal. "username" should be replaced with the user's Dockerhub username. 
 
-# Instructions on how to run the scripts inside a container
-
+# Instructions on how to run use the containerized scripts
 Our container may be accessed by using
 
 `docker run --rm -it username/json-parser:1.0 /bin/bash`
