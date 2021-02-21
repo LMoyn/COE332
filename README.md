@@ -28,13 +28,19 @@ The homework02 read_animals.py and generate_animals.py must be provided with the
 
 # Instructions on how to build an image with the Dockerfile provided
 
-The code may be containerized by using
+The code in the homework02 folder may be containerized by using
 
+`docker build -t username/json-parser:1.0 .`
+
+in the terminal. "username" should be replaced with the user's Dockerhub username. This container may be accessed by using
+
+`docker run --rm -it username/json-parser:1.0 /bin/bash`
+
+Inside the container, our code can be run as described in the above section
 
 # Instructions on how to run the scripts inside a container
 
-Once we have containerized the scripts, we can run them by using
-
+Once we have containerized the scripts, we can run them without entering the container. using `docker run`
 
 
 # Instructions on how to run the unit test(s)
