@@ -10,15 +10,7 @@ The repository may be downloaded by using
 
 `git pull https://github.com/LMoyn/COE332.git`
 
-in the terminal. To run the scripts, first navigate to the appropriate subfolder. The homework01 scripts can be run by using 
-
-`python3 generate_animals.py`
-
-and
-
-`python3 read_animals.py`
-
-The homework02 read_animals.py and generate_animals.py must be provided with the name of the JSON file to read/write to. To generate animals and store them in a file called "animals.json", use
+in the terminal. To run the scripts, first navigate to the appropriate subfolder. The homework02 read_animals.py and generate_animals.py must be provided with the name of the JSON file to read/write to. To generate animals and store them in a file called "animals.json", use
 
 `python3 generate_animals.py animals.json`
 
