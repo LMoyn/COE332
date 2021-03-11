@@ -49,7 +49,7 @@ And it can be removed with
 docker rmi <image_name>
 ```
 
-#Using the Flask App
+# Using the Flask App
 
 Before using the flask app, one must eneter the follow from the terminal:
 
