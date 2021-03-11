@@ -24,7 +24,7 @@ def get_animals():
 
 
 @app.route('/animals/head/<head>', methods=['GET'])
-def get_heads():
+def get_heads(head):
 
     animal_dict = get_data()
     head_dict = {}
@@ -38,7 +38,7 @@ def get_heads():
     return jsonify(head_dict)
 
 @app.route('/animals/legs/<num_legs>', methods=['GET'])
-def get_legs():
+def get_legs(num_legs):
     animal_dict = get_data()
     leg_dict = {}
     leg_dict['animals'] = []
@@ -47,7 +47,7 @@ def get_legs():
 
     #If animal has the correct number of legs, add it to the dictionary
     for animal in animal_dict['animals']:
-        if animal['legs'] == head:
+        if animal['legs'] == n:
             leg_dict['animals'].append(animal)
     
     return jsonify(leg_dict)
