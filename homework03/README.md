@@ -1,6 +1,6 @@
 # COE332 homework03
 
-The homework03 folder also contains a dockerfile. This lets the user to containerize the code, which allows for the dependencies to be shipped together and ensures that the scripts run under the same conditions no matter where they are run.
+This is the third homework for COE332. A Flask app was developed that can return information from an included animals.json file. The app can be run directly or through a Docker container, and instructions for both use cases are provided.
 
 # Instructions on how to download and run the scripts directly
 
@@ -10,11 +10,11 @@ The repository may be downloaded by using
 git pull https://github.com/LMoyn/COE332.git
 ````
 
-in the terminal. To run the scripts, first navigate to the appropriate subfolder. The homework03 
+in the terminal. To run the scripts, first navigate to the appropriate subfolder /homework03 
 
 # Instructions on how to build an image with the Dockerfile provided
 
-Before containerizing, it is necessary to navigate to the \web directory
+Before containerizing, it is necessary to navigate to the /web directory
 
 The code in the homework03 folder may be containerized by using
 
@@ -22,7 +22,7 @@ The code in the homework03 folder may be containerized by using
 docker build -t <image_name>:latest .
 ```
 
-in the terminal. "username" should be replaced with the user's Dockerhub username. 
+in the terminal.
 
 # Instructions on how to run use the containerized scripts
 Our container may be accessed by using
@@ -31,19 +31,22 @@ Our container may be accessed by using
 docker run --name "give your container a name" -d -p <your portnumber>:5000 <image_name>
 ```
 
-Inside the container, our code can be run as described in the previous homework's READMEs. exit the container by typing `exit`
-
-
-Once the scripts are containerized, they can be run without entering the container using `docker run`. To run the generate_animals.py script and store the animals in a file called animals.json, use
+We can verify that the container is running by looking at the list of containers which appears after entering
 
 ```bash
-docker run --rm -v $PWD:/data username/json-parser:1.0 generate_animals.py /data/animals.json`
+docker ps -a
 ```
 
-Similarly, the read_animals.py script can read off the animals.json file using
+The container can be stopped by using
 
 ```bash
-docker run --rm -v $PWD:/data username/json-parser:1.0 read_animals.py /data/animals.json
+docker stop <image_name>
+```
+
+And it can be removed with
+
+```bash
+docker rmi <image_name>
 ```
 
 #Using the Flask App
@@ -53,7 +56,7 @@ Before using the flask app, one must eneter the follow from the terminal:
 ```bash
 export FLASK_APP=app.py
 export FLASK_ENV=development
-flask run -h localhost -p <port>
+flask run -h localhost -p <your portnumber>
 ```
 
 The app has the following functionality:
@@ -61,19 +64,27 @@ The app has the following functionality:
 -Return all animals in animals.json:
 
 ```bash
-curl localhost:<port>/animals.
+curl localhost:<your portnumber>/animals.
 ```
 
 -Return all animals in animals.json with a user defined head type:
 
 ```bash
-curl localhost:<port>/animals/head/<head>.
+curl localhost:<your portnumber>/animals/head/<head>.
 ```
 
 -Return all animals in animals.json with a user defined number of legs:
 
 ```bash
-curl localhost:<port>/animals/legs/<num_legs>.
+curl localhost:<your portnumber>/animals/legs/<num_legs>.
 ```
 
-The animal_consumer.py script uses this functionality. It may be run from the command line
+The animal_consumer.py script uses this functionality. It may be run from the command line using
+
+```bash
+python3 animal_consumer.py
+```
+
+The Response1, Response2, and Response3 outputs use the functionality in the order they are described above.
+
+The port number in the animals_consumer.py file may also be edited to access another student's Flask app.
